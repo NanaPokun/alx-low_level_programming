@@ -3,20 +3,15 @@
 /**
  * main - Entry point of the program
  *
- * Description: The program prints the sizeof the type
+ * Description: This program prints the sizeof the type use on system
  *
- * Return: It always is 0
+ * Return: It is always 0
  *
  */
 
 int main(void)
 {
-	/**
-	 * The printf function to print sizeof type starts here
-	 *
-	 * Return is 0
-	 *
-	 */
+	/* The functions print the sizeof the type */
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(char));
 	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(int));
 	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(long int));
