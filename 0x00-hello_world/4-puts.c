@@ -1,12 +1,18 @@
 #include <stdio.h>
 
-/*The  main function begins at this entry point*/
+/**
+ * main - Entry point of the program
+ *
+ * Description: This function prints a specific string using puts
+ *
+ * Return: Always 0 
+ */
+
 int main(void)
 {
 	/**
-	 *The function prints a message using the puts function
-	 It returns the o
+	 *The puts function starts here and ends when return value is 0
 	*/
 	puts("\"Programming is like building a multilingual puzzle\n");
-	return(0);    
+	return (0);
 }
