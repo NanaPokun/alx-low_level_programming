@@ -13,6 +13,6 @@ int main(void)
 	/**
 	 *The puts function starts here and ends when return value is 0
 	*/
-	puts("\"Programming is like building a multilingual puzzle \n");
+	puts("\"Programming is like building a multilingual puzzle  ");
 	return (0);
 }
