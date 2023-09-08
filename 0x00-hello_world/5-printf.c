@@ -4,6 +4,8 @@
  * main - Entry point of the program
  *
  * Description: The function would print the exact text provided
+ *
+ * Return: Always 0 (succes)
  */
 
 int main(void)
