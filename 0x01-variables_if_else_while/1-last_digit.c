@@ -15,11 +15,14 @@ int main(void)
 	/*Initializing the n variable */
 	int n;
 
+	/* Declare my variables here */
+	int l;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	/* This would extract the last digit */
-	int l = n % 10;
+	l = n % 10;
 	/* The if loop starts here */
 	if (l > 5)
 	{
