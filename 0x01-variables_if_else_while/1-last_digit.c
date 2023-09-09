@@ -2,14 +2,15 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
+
 /**
- * * main - Entry point for the program
- * *
- * * Description: The program would print out the last digit of random number
- * * 
- * * Return: is always 0
- * */
+ * main - entry point for the program
+ *
+ * Description: Program prints the last digit of a random number
+ *
+ * Return: Always 0
+ *
+ */
 int main(void)
 {
 	/*Initializing the n variable */
@@ -21,8 +22,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	/* This would extract the last digit 
-	 * */
+	/* This would extract the last digit*/
 	l = n % 10;
 	/* The if loop starts here */
 	if (l > 5)
@@ -35,7 +35,7 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is lesthan 6 and not equal to 0\n", 
+		printf("Last digit of %d is %d and is less than 6 and not 0\n",
 				n, l);
 	}
 	/* returns 0 and end program */
