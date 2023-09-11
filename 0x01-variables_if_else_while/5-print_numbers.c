@@ -16,13 +16,14 @@ int main(void)
 
 	/**Begin looping here*/
 
-	 while (single < 10)
+	while (single < 10)
 	{
 		printf("%d", single);
 		single++; /*updatung state*/
 	}
-	 /*Printing a new line*/
-	 printf("\n");
+
+	/*Printing a new line*/
+	printf("\n");
 
 	/*Return value is 0*/
 	return (0);
