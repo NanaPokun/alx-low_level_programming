@@ -11,14 +11,13 @@
 
 int main(void)
 {
-	
 	/*Declaring and initializing variable*/
 	char lowcase = 'a';
 
 	/*Begin the do while loop here */
 	do {
 		/*Start an if loop to check if p or e is available*/
-		if (lowcase != 'e' && lowcase != 'p')
+		if (lowcase != 'e' && lowcase != 'q')
 		{
 			putchar(lowcase); /*print the char*/
 		} lowcase++; /*update the char by 1*/
