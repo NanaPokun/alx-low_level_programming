@@ -13,8 +13,8 @@ int main(void)
 {
 	/*TVariables are declared and initialized here*/
 	int single = 0;
-	
-	/*Begin looping here*/
+
+	/**Begin looping here*/
 	 while (single < 10)
 	{
 		printf("%d", single);
