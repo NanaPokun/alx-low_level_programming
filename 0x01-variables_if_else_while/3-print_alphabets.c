@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
- * naim - Entry point to the program
+ * main - Entry point to the program
  *
  * Description: The program prints both lower and uppercase alphabets
  *
  * Return: It's always 0
  *
  */
-
 int main(void)
 {
 	/* Declaration and initialization of varianles here*/
