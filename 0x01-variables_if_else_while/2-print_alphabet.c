@@ -15,11 +15,10 @@ int main(void)
 	char alpha = 'a';
 
 	/* Starting the do while loop*/
-	do
-	{
+	do{
 		putchar(alpha); /*prints character*/
-		alpha ++; /*updates character printed by 1*/
-	}while(alpha <= 'z'); /*checks if char meets conditions*/
+		alpha++; /*updates character printed by 1*/
+	} while (alpha <= 'z'); /*checks if char meets conditions*/
 	/*Printing a newline*/
 	putchar('\n');
 
