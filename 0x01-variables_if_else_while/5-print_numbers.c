@@ -15,6 +15,7 @@ int main(void)
 	int single = 0;
 
 	/**Begin looping here*/
+
 	 while (single < 10)
 	{
 		printf("%d", single);
