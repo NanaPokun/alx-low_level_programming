@@ -14,7 +14,7 @@ int main(void)
 	/*Declare and initialize avriable i*/
 	int i;
 	/*Begin for loop here and nest an if loop within*/
-	for (i = 0; i <=9; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		putchar('0' + i); /*Print out the first character*/
 		/*Begin nestted if loop here */
