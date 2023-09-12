@@ -10,7 +10,6 @@
  */
 int main(void)
 {
-	
 	int num = 0; /*This declares the variable and initializes it*/
 
 	/*The while loop begins here*/
