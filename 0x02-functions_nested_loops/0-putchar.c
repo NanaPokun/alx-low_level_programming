@@ -21,7 +21,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	/*Return value is 0*/
 	return (0);
 }
