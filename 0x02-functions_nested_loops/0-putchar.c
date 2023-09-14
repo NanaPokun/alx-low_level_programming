@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point to the program
+ * main - prints _putchar
  *
- * Description: The program prints the _putchar
+ * Description: This program was written by felix
  *
  * Return: Always is 0
  *
@@ -11,7 +11,17 @@
 
 int main(void)
 {
-	printf("_putchar\n"); /*Print the string*/
+	/*Printing _putchar starts here*/
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	return (0); /*return value is 0*/
+	/*Return value is 0*/
+	return (0);
 }
