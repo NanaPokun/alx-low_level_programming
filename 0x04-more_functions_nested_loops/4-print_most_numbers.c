@@ -3,8 +3,6 @@
 /**
  * print_most_numbers -Entry point to print most numbers
  *
- * @y: function aparameter
- *
  * Return: All numbers except 2 and 4
 */
 
