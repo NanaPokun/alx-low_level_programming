@@ -3,7 +3,7 @@
 /**
  * more_numbers - Entry point of program to print more numbers
  *
- * Return: numbers from 1 to 14 ten times
+ * Return: is void
  *
 */
 
@@ -13,14 +13,14 @@ void more_numbers(void)
 	int i;
 	int j;
 
-	/*for loop begins here*/
+	/*for loop for i and j begins here*/
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			_putchar(j + '0');
+			_putchar(j + '0'); /*prints number*/
 		}
 
-	_putchar('\n');
+	_putchar('\n'); /*prints new line*/
 	}
 }
