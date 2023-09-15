@@ -19,11 +19,13 @@ void more_numbers(void)
 		/*loop for j begins here*/
 		for (j = 0; j <= 14; j++)
 		{
+			if (j > 9)
+			{
+				_putchar(j / 10 + '0');
+			}
 			/*print numbers from 0 to 14*/
-			_putchar(j + '0');
+			_putchar(j % 10 + '0');
 		}
 		_putchar('\n'); /*prints new line*/
 	}
-	/*print another new line*/
-	_putchar('\n');
 }
