@@ -16,11 +16,14 @@ void more_numbers(void)
 	/*for loop for i and j begins here*/
 	for (i = 0; i < 10; i++)
 	{
+		/*loop for j begins here*/
 		for (j = 0; j <= 14; j++)
 		{
-			_putchar(j + '0'); /*prints number*/
+			/*print numbers from 0 to 14*/
+			_putchar(j + '0');
 		}
-
-	_putchar('\n'); /*prints new line*/
+		_putchar('\n'); /*prints new line*/
 	}
+	/*print another new line*/
+	_putchar('\n');
 }
