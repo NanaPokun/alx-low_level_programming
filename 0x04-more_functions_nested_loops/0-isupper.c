@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * _isupper -returns 1 if c is upper or 0 if c is not
+ * _isupper - Entry poit to program to print uppercase
  *
- * Description: C more functions
+ * @c: function parameter
+ *
+ * Return:1 if c is upper els 0
  */
 int _isupper(int c)
 {
@@ -11,7 +13,8 @@ int _isupper(int c)
 	if (c <= 'A' && c >= 'Z')
 	{
 		return (1);
-	} else 
+	}
+	else
 	{
 		return (0);
 	}
