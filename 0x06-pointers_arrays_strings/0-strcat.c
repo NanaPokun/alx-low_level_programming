@@ -28,6 +28,5 @@ char *_strcat(char *dest, char *src)
 
 	/*Add a null terminator to the end*/
 	dest[dest_len] = '\0';
-	
 	return (dest);
 }
