@@ -10,31 +10,24 @@
 char *leet(char *str)
 {
 	int j = 0;
+	int i;
+	char lchars = "aAeEoOtTlL";
+	char lreplace = "4433007711";
 
 	while (str[j] != '\0')
 	{
-		case 'a':
-		case 'A':
-			str[j] = '4';
-			break;
-		case 'e':
-		case 'E':
-			str[j] = '3';
-			break;
-		case 'o':
-		case 'O':
-			str[j] = '0';
-			break;
-		case 't':
-		case 'T':
-			str[j] = '7';
-			break;
-		case 'l':
-		case 'L':
-			str[j] = '1';
-			break;
+		i = 0;
+		while (lchars[i] != '\0')
+		{
+			if (str[j] == lchars[i])
+			{
+				str[j] = lreplace[i];
+				break;
+			}
+			i++;
+		}
+		j++;
 	}
-	j++;
 
 	return (str);
 }
