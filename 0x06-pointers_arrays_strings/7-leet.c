@@ -3,25 +3,25 @@
 /**
  * leet - Encodes a string into leet spak 1337
  *
- * @str: input string
+ * @n: input string
  *
  * Return: Pointer to modified string
 */
-char *leet(char *str)
+char *leet(char *n)
 {
 	int j = 0;
 	int i;
-	char lchars = "aAeEoOtTlL";
-	char lreplace = "4433007711";
+	char lchars[] = "aAeEoOtTlL";
+	char lreplace[] = "4433007711";
 
-	while (str[j] != '\0')
+	while (n[j] != '\0')
 	{
 		i = 0;
 		while (lchars[i] != '\0')
 		{
-			if (str[j] == lchars[i])
+			if (n[j] == lchars[i])
 			{
-				str[j] = lreplace[i];
+				n[j] = lreplace[i];
 				break;
 			}
 			i++;
@@ -29,5 +29,5 @@ char *leet(char *str)
 		j++;
 	}
 
-	return (str);
+	return (n);
 }
