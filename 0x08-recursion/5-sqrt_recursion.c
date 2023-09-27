@@ -8,7 +8,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt_recursion_helper(n, 1)); /* Call helper function with initial guess */
+	return (_sqrt_recursion(n, 1)); /* Call helper function with initial guess */
 }
 
 /**
@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
  *
  * Return: The natural square root of n, or -1 if n has no natural square root
  */
-int _sqrt_recursion_helper(int n, int guess)
+int _sqrt_recursion(int n, int guess)
 {
 	int next_guess = (n / guess + guess) / 2;
 
@@ -31,5 +31,5 @@ int _sqrt_recursion_helper(int n, int guess)
 		return (-1);
 	}
 
-	return (_sqrt_recursion_helper(n, next_guess)); /* Recursively refine guess */
+	return (_sqrt_recursion(n, next_guess)); /* Recursively refine guess */
 }
