@@ -14,17 +14,21 @@ int is_palindrome(char *s)
 	/* Base case: An empty string or a string with one character is a palindrome */
 	if (length <= 1)
 	{
-		return 1;
+		return (1);
 	}
 
-	/* Compare the first and last characters */
-	if (s[0] == s[length - 1])
+	/* Check if the first and last characters match */
+	if (s[0] != s[length - 1])
 	{
-		/* Recursive call with the substring (excluding the first and last characters) */
-		return is_palindrome(s + 1);
+		return (0);
 	}
 
-	return 0; /* If the first and last characters don't match, it's not a palindrome */
+	/* Replace the first and last characters with null terminators */
+	s[length - 1] = '\0';
+	s++;
+
+ 	/* Recursive call with the modified substring */
+	return (is_palindrome(s));
 }
 
 /**
@@ -35,13 +39,10 @@ int is_palindrome(char *s)
  */
 int _strlen(char *s)
 {
-	int length = 0;
-
-	while (*s != '\0')
+	if (*s == '\0')
 	{
-		length++;
-		s++;
+		return (0);
 	}
 
-	return length;
+	return (1 + _strlen(s + 1));
 }
