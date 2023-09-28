@@ -9,7 +9,12 @@ int _sqrt_recursive(int n, int guess);
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt_recursive(n, 1)); /* Call helper function with initial guess */
+	if (n < 0)
+	{
+		return (-1);
+	}
+
+	return (_sqrt_recursive(n, 0)); /* Call helper function with initial guess */
 }
 
 /**
@@ -21,16 +26,14 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_recursive(int n, int guess)
 {
-	int next_guess = (n / guess + guess) / 2;
-
-	if (next_guess == guess) /* Base case: square root found */
-	{
-		return (guess);
-	}
-	if (next_guess < guess) /* Error case: square root does not exist */
+	if (guess * guess > n) /* Base case: square root found */
 	{
 		return (-1);
 	}
+	if (guess * guess == n) /* Error case: square root does not exist */
+	{
+		return (guess);
+	}
 
-	return (_sqrt_recursive(n, next_guess)); /* Recursively refine guess */
+	return (_sqrt_recursive(n, guess + 1)); /* Recursively refine guess */
 }
