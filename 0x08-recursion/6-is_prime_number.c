@@ -8,6 +8,15 @@
  */
 int is_prime_number(int n)
 {
+	if (n <= 1)
+	{
+		return (0);
+	}
+	if (n == 1)
+	{
+		return (2);
+	}
+
 	return (is_prime_recursive(n, 2)); /* Call helper function with divisor 2 */
 }
 
@@ -20,10 +29,6 @@ int is_prime_number(int n)
  */
 int is_prime_recursive(int n, int divisor)
 {
-	if (n <= 1) /* Base case: numbers less than or equal to 1 are not prime */
-	{
-		return (0);
-	}
 	if (divisor >= n) /* Base case: n is prime if no divisors found */
 	{
 		return (1);
