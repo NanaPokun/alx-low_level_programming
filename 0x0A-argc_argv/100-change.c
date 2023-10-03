@@ -16,16 +16,14 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
-
 
 	if (cents < 0)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
-
 
 	while (cents > 0)
 	{
@@ -57,5 +55,5 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", coins);
-	return 0;
+	return (0);
 }
