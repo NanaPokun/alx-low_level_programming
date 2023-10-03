@@ -17,11 +17,11 @@ int is_positive_number(char *str)
 	{
 		if (*str < '0' || *str > '9')
 		{
-    			return (0); // Non-digit character found
+    			return (0); /*Non-digit character found*/
 		}
 		str++;
 	}
-	return (1); // All characters are digits
+	return (1);
 }
 
 /**
@@ -34,8 +34,9 @@ int is_positive_number(char *str)
 int main(int argc, char *argv[])
 {
 	int sum = 0;
+	int i;
 
-	for (int i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (is_positive_number(argv[i]))
 		{
