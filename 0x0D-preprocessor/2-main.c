@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
  * main - Entry point
  *
@@ -8,8 +6,6 @@
  */
 int main(void)
 {
-    _putchar(__FILE__[0]);
-    _putchar(__FILE__[1]);
-    _putchar('\n');
-    return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }
