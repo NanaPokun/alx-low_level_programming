@@ -1,6 +1,5 @@
 #include <stdarg.h>
-#include "holberton.h"
-#include "main.h"
+#include "variadic_functions.h"
 
 /**
  * print_all - Prints any type of argument

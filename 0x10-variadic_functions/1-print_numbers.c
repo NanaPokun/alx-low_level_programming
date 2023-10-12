@@ -1,6 +1,6 @@
 #include <stdarg.h>
-#include "holberton.h"
-#include "main.h"
+#include "variadic_functions.h"
+
 /**
  * print_numbers - Prints numbers, followed by a separator and a new line
  * @separator: The string to print between numbers

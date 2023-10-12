@@ -1,6 +1,5 @@
 #include <stdarg.h>
-#include "holberton.h"
-#include "main.h"
+#include "variadic_function.h"
 /**
  * print_strings - Prints strings, followed by a separator and a new line
  * @separator: The string to print between strings
